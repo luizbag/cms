@@ -1,0 +1,17 @@
+{
+  "name": "cms",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Luiz Gavioli <luizbag@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
