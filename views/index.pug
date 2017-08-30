@@ -3,3 +3,8 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  div(ng-controller='Comments')
+    input(ng-model="item.name")
+    button(ng-click='addItem()') OK
+    ul(ng-show='items')
+      li(ng-repeat='item in items' class="fade") {{ item.name }}
