@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    div(class="container-fluid" ng-controller="PostController as postCtrl")
+        div(class="row")
+            div(class="col-sm-6 col-md-4" ng-repeat="post in postCtrl.posts")
+                div(class="thumbnail")
+                    img(src="{{post.thumb}}" alt="{{post.title}}")
+                    div(class="caption")
+                        h3 {{post.title}}

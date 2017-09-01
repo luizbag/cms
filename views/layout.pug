@@ -1,13 +1,6 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/assets/bootstrap/dist/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/css/style.css')
-  body(ng-app='cms')
-    block content
-    script(src='/assets/jquery/dist/jquery.min.js')
-    script(src='/assets/bootstrap/dist/js/bootstrap.min.js')
-    script(src='/assets/angular/angular.min.js')
-    script(src='/assets/angular-animate/angular-animate.min.js')
-    script(src='/js/app.js')
+    include includes/head.pug
+    body(ng-app='cms')
+        block content
+        include includes/foot.pug
